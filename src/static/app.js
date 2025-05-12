@@ -13,7 +13,7 @@ document.addEventListener("DOMContentLoaded", () => {
       // Clear loading message
       activitiesList.innerHTML = "";
 
-      // Populate activities list
+      // Verifique se há participantes antes de renderizar a lista
       Object.entries(activities).forEach(([name, details]) => {
         const activityCard = document.createElement("div");
         activityCard.className = "activity-card";
@@ -27,13 +27,17 @@ document.addEventListener("DOMContentLoaded", () => {
           <p><strong>Availability:</strong> ${spotsLeft} spots left</p>
           <p><strong>Participants:</strong></p>
           <ul>
-            ${details.participants.map(participant => `<li>${participant}</li>`).join("")}
+            ${
+              details.participants.length > 0
+                ? details.participants.map(participant => `<li>${participant}</li>`).join("")
+                : "<li>No participants yet</li>"
+            }
           </ul>
         `;
 
         activitiesList.appendChild(activityCard);
 
-        // Add option to select dropdown
+        // Adicione a opção ao dropdown
         const option = document.createElement("option");
         option.value = name;
         option.textContent = name;

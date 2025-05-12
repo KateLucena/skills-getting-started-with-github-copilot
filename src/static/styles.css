@@ -83,14 +83,15 @@ section h3 {
 }
 
 .activity-card ul li {
-  margin-bottom: 5px;
-  font-size: 14px;
-  color: #444; /* Ajuste para um tom intermediário */
-  font-weight: bold; /* Torne o texto mais destacado */
-  line-height: 1.6; /* Ajuste adicional no espaçamento entre linhas */
-  text-transform: capitalize; /* Torne a primeira letra de cada palavra maiúscula */
-  border-left: 3px solid #1a237e; /* Adicione uma borda decorativa */
-  padding-left: 10px; /* Espaçamento para separar o texto da borda */
+  margin-bottom: 8px; /* Aumente o espaçamento entre os itens */
+  font-size: 15px; /* Ajuste o tamanho da fonte para melhor legibilidade */
+  color: #333; /* Use uma cor mais escura para contraste */
+  font-weight: 600; /* Torne o texto mais destacado */
+  line-height: 1.8; /* Melhore o espaçamento entre linhas */
+  border-left: 4px solid #3949ab; /* Adicione uma borda decorativa mais visível */
+  padding-left: 12px; /* Ajuste o espaçamento entre o texto e a borda */
+  background-color: #f0f4ff; /* Adicione um fundo sutil para destacar os itens */
+  border-radius: 3px; /* Arredonde os cantos do fundo */
 }
 
 .form-group {
